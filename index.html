@@ -1,71 +1,157 @@
+<!DOCTYPE HTML>
 <html>
 <head>
-	<title>Website Design Test</title>
-	<link rel="stylesheet" href="style.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-	<script src="script.js"></script>
+	<title>Bradley Jang</title>
+	<meta name="viewport" content="width=device-width,
+	initial-scale=1, maximum-scale=1, minimum-scale=1"/>
+	<link rel="stylesheet" type="text/css" href="default.css">
 	
+	<link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+	
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&family=Russo+One&display=swap" rel="stylesheet">
 
-</head>
+
 <body>
-	<div class="container">
-		<div class="navbar">
-			<img src="images/test.png" class="logo">
-			<nav>
-				<ul>
-					<li><a href="index.html">Home</li>
-					<li><a href="inprogress.html">About Me</li>
-					<li><a href="inprogress.html">Work Experience</li>
-					<li><a href="inprogress.html">Projects</li>
+	<section class="s1">
+		<div class="main-container">
+			<div class = "greeting-wrapper">
+				<h1>Hi, I'm Bradley Jang</h1>
+				<p>Welcome to my website!</p>
+				<a href="#">DA LINKY</a>
+			</div>
+			
+			<div class = "intro-wrapper">
+				<div class = "nav-wrapper">
+					<div class="dots-wrapper">
+						
+						<!-- same class but different ids we have uniform dimensions but different colours -->
+						<div id="dot-1" class="browser-dot"></div>
+						<div id="dot-2" class="browser-dot"></div>
+						<div id="dot-3" class="browser-dot"></div>
+					
+					
+					
+					</div>
+					
+					<ul id="navigation">
+						<li><a href="BradleyJangResume.pdf">Contact Me!</a></li>
+					</ul>
 					
 				
-				</ul>
-			</nav>
+				</div>
+				
+				<div class = "left-column">
+					<img id="pfp" src="images/slideshow0.png" width="400" height="300">
+					<figcaption>My university grad photo.</figcaption>
+					
+					<h5 style="text-align: center; line-height: 0;">Personalize theme</h5>
+				
+					<div id="theme-options-wrapper">
+						<div id="light-mode" class="theme-dot"></div>
+						<div id="blue-mode" class="theme-dot"></div>
+						<div id="green-mode" class="theme-dot"></div>
+						<div id="purple-mode" class="theme-dot"></div>
+						
+					</div>
+					
+					<p id="settings-note">Theme settings will be saved <br>for your next visit.</p>
+					
+				</div>
+				
+				<div class = "right-column">
+					
+					<div id="preview-shadow">
+						<div id="preview">
+							<div id="corner-tl" class="corner"></div>
+							<div id="corner-tr" class="corner"></div>
+							<h3>What I do.</h3>
+							<p>I am a university graduate, now working as a developer.</p>
+							<div id="corner-br" class="corner"></div>
+							<div id="corner-bl" class="corner"></div>
+						</div>
+					</div>
+					
+					
+					
+					<div id="preview-shadow2">
+						<div id="preview2">
+							<div id="corner-tl" class="corner"></div>
+							<div id="corner-tr" class="corner"></div>
+							<h3>See my coding...</h3>
+							<p>By checking out my Github!.</p>
+							<div id="corner-br" class="corner"></div>
+							<div id="corner-bl" class="corner"></div>
+						</div>
+					</div>
+				</div>
+			</div>
 			
-			<!-- <img src="images/cart.png" class="cart"> -->
 		</div>
-		
-		
-		<div class="content">
-			<h1>Hi! I'm Bradley.</h1>
-			<div class="wrapper">
-				<div class="static-txt">I'm a</div>
-				<ul class="dynamic-txts">
-					<li><span>Developer</span></li>
-					<li><span>Graduate</span></li>
-					<li><span>Programmer</span></li>
-					<li><span>Freelancer</span></li>
-				</ul>
+	</section>
+	
+	
+	
+	
+	<section class="s2">
+		<div class="main-container">
+			<div class="about-wrapper">
+				<div class="about-me">
+					<h4>About Me</h4>
+					<p>I am a gigachad 100 morbillion iq</p>
+					<p>For real though add something decent</p>
+				</div>
+				
+				<hr>
+				
+				<h4>My area of focus</h4>
+				
+				<p>To be honest, I'm at a trajectory in my career where I'm deciding on my focus. Front end?
+				Back end? I'm still thinking all that through. What I do know is that I'd like a career that can facilitate lifelong growth and learning.</p>
+				
+				<p>While I don't have an area of focus yet, I have worked with a myriad of technologies. Some of the more notable ones are listed below. 
+				I've also provided a link to my resume; feel free to take a copy: <a href="BradleyJangResume.pdf" target="_blank">View my resume!</a></p>
+				
+				<div id="skills">
+					<ul>
+						<li>Python</li>
+						<li>Javascript</li>
+						<li>HTML/CSS</li>
+					</ul>
+					
+					<ul>
+						<li></li>
+						<li></li>
+						<li></li>
+					
+	
+					</ul>
+				
+				
+				</div>
+				
+				<div class="social-links"></div>
+			
+			
+			
+			
 			</div>
-			<a href="BradleyJangResume.pdf" target="_blank" class="btn">View my resume!</a>
-			<a href="mailto:bradley.m.jang@gmail.com" target="_blank" class="cart">Hire me!</a>
+			
 		</div>
-		
-		<!-- <img src="images/me.png" class="feature-img"> -->
-		
-		<div id="slideshow">
-		  
-			<div>
-				<img src="images/slideshow0.png">
-			</div>
-			<div>
-				<img src="images/slideshow1.png">
-			</div>
-			<div>
-				<img src="images/slideshow2.png">
-			</div>
-			<div>
-				<img src="images/slideshow3.png">
-			</div>
+	</section>
+	
+	<section class="s1">
+		<div class="main-container">
+			Portfolio
 		</div>
-		
-		<div class="social-links">
-			<a href="">LINKEDIN</a>
-			<a href="">GITHUB</a>
-			<a href="">PERSONAL WEBSITE</a>
+	</section>
+	
+	<section class="s2">
+		<div class="main-container">
+			Contact Me
 		</div>
-	</div>
+	</section>
+	
 </body>
 
-	
-</html>
+</head>
+</html> 

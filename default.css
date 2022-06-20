@@ -1,0 +1,361 @@
+:root{
+	/* variable declaration */
+	 --mainText:black; 
+	 --secondaryText:#4b5156;
+	 --mainColor:#eaeaea;
+	 --secondaryColor:#fff;
+	 --borderColor:#c1c1c1;
+	 
+	 --themeDotBorder:#24292e;
+	 
+	 --previewBg:rgb(251, 249, 243, 0.8);
+	 --previewShadow:#f0ead6;
+	
+	 
+
+}
+
+
+html, body{
+	padding: 0;
+	margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6, strong{
+	color: var(--mainText);
+	font-family: 'Russo One', sans-serif;
+}
+
+p, li, span, label, input, textarea{
+	color: var(--mainText);
+	font-family: 'Roboto Mono', monospace;
+}
+
+a{
+	text-decoration: none;
+	color:#17a2b8
+}
+
+/* no bullets for list */
+ul{
+	list-style: none;
+}
+
+
+h1 { font-size: 56px;}
+h2 { font-size: 36px;}
+h3 { font-size: 28px;}
+h4 { font-size: 24px;}
+h5 { font-size: 20px;}
+h6 { font-size: 16px;}
+
+
+/* set visual attributes for given sections */
+.s1{
+	background-color: var(--mainColor);
+	border-bottom: 1px solid var(--borderColor);
+	overflow:auto;
+}
+
+.s2{
+	background-color: var(--secondaryColor);
+	border-bottom:1px solid var(--borderColor);
+	overflow:auto;
+}
+
+.main-container{
+	width: 1200px;
+	margin: 0 auto;
+}
+
+.greeting-wrapper{
+	display: grid;
+	text-align: center;
+	align-content: center;
+	border: 2px dashed lightcoral;
+	min-height: 10em;
+}
+
+.intro-wrapper{
+	background-color: var(--secondaryColor);
+	border: 1px solid var(--borderColor);
+	border-radius: 5px 5px 0 0;
+	-webkit-box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
+	-moz-box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
+	box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
+	
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	
+	/* Removing below code allows auto-adjustment of wrapper when adding large images, new text, etc
+	If we want wrapper to stay a static size we would keep the below code*/
+	/* grid-template-rows: 3em 30em; */
+	
+	
+	grid-template-areas: 
+		/* double nav wrappers ensure the nav wrapper grip covers both halves of the grid */
+		'nav-wrapper nav-wrapper'
+		/* conversely the left column and write column will take up the bottoms halves of the grid */
+		'left-column right-column'
+	;
+	
+
+}
+
+.nav-wrapper{
+	border-radius: 5px 5px 0 0;
+	grid-area: nav-wrapper;
+	border-bottom: 1px solid var(--borderColor);
+	/* bottom three lines of code align dots-wrapper and navigation so they are on left and right*/
+	/* and centred vertically */
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: var(--mainColor);
+}
+
+#navigation{
+	margin:0;
+	padding: 10px;
+}
+
+#navigation li{
+	display: inline-block; 
+	margin-right: 5px;
+	margin-left: 5px;
+}
+
+/* align dots horizontally and "indent" them slightly */
+.dots-wrapper{
+	display: flex;
+	padding: 10px; 
+}
+
+#dot-1{
+	background-color: #Be2528;
+}
+
+#dot-2{
+	background-color: #Fafd03;
+}
+
+#dot-3{
+	background-color: #2ACA3E;
+}
+
+
+
+/* set basic attributes for dot */
+.browser-dot{
+	/* default colour black, but will change in other CSS  */
+	background-color: black; 
+	height: 15px;
+	width: 15px;
+	border-radius: 50%;
+	margin: 5px;
+	
+	-webkit-box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
+	-moz-box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
+}
+
+
+.left-column{
+	padding-top: 50px;
+	padding-bottom: 50px;
+	grid-area: left-column;
+	
+}
+
+#pfp{
+	display: block;
+	margin: 0 auto;
+	height: 200px;
+	width: 200px;
+	object-fit: cover;
+	border: 2px solid var(--borderColor);
+	padding-top: 10px;
+	
+}
+
+#theme-options-wrapper{
+	display: flex;
+	justify-content: center;
+}
+
+#settings-note{
+	display: flex;
+	justify-content: center;
+	font-size: 12px;
+	font-style: italic;
+}
+
+
+
+.theme-dot{
+	height: 30px;
+	width: 30px;
+	/* ensures round circle */
+	border-radius: 50%;
+	/* margin adds vertical spacing between dots */
+	margin: 5px;
+	border: 2px solid var(--themeDotBorder);
+	
+	-webkit-box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
+	-moz-box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
+	
+	cursor: pointer;
+}
+
+.theme-dot:hover{
+	border-width: 5px;
+}
+
+figcaption {
+  display: block;
+  /* background-color: black; */
+  color: black;
+  font-style: italic;
+  padding: 2px;
+  text-align: center;
+  /* spacing between the caption and the theme buttons */
+  padding-bottom: 20px;
+}
+
+#light-mode{
+	background-color: #fff;
+}
+
+#blue-mode{
+	background-color: #192734;
+}
+
+#green-mode{
+	background-color: #78866b;
+}
+
+#purple-mode{
+	background-color: #7E4C74;
+}
+
+
+.right-column{
+	padding-top: 50px;
+	padding-bottom: 50px;
+	grid-area: right-column;
+	display: grid;
+	align-content: center;
+	
+}
+
+#preview-shadow{
+	background-color: var(--previewShadow);
+	width: 300px;
+	height: 210px;
+	padding-left: 30px;
+	padding-top: 30px; 
+	margin-bottom: 20px;
+	/* padding-bottom: 30px;  */
+	
+}
+
+#preview{
+	width: 300px;
+	border: 1.5px solid #17a2b8;
+	padding: 15px;
+	background-color: var(--previewBg);
+	position: relative;
+	
+	
+}
+
+#preview-shadow2{
+	background-color: var(--previewShadow);
+	width: 300px;
+	height: 190px;
+	padding-left: 30px;
+	padding-top: 30px; 
+}
+
+#preview2{
+	width: 300px;
+	border: 1.5px solid #17a2b8;
+	padding: 15px;
+	background-color: var(--previewBg);
+	position: relative;
+	
+}
+
+.corner{
+	width: 7px;
+	height: 7px;
+	border-radius: 50px;
+	border:1.5px solid #17a2b8;
+	background-color: #fff;
+	position: absolute;
+	
+	
+}
+
+#corner-tl{
+	top: -5px;
+	left: -5px;
+}
+
+#corner-tr{
+	top: -5px;
+	right: -5px;
+}
+
+#corner-br{
+	bottom: -5px;
+	right: -5px;
+}
+
+#corner-bl{
+	bottom: -5px;
+	left: -5px;
+}
+
+
+	
+
+@media screen and (max-width: 1200px){
+	.main-container{
+		width: 95%;
+	}
+}
+
+@media screen and (max-width: 800px){
+	.intro-wrapper{
+		
+		grid-template-columns: 1fr;
+		
+		/* Removing below code allows auto-adjustment of wrapper when adding large images, new text, etc
+		If we want wrapper to stay a static size we would keep the below code*/
+		/* grid-template-rows: 3em 30em; */
+		
+		
+		grid-template-areas: 
+			/* double nav wrappers ensure the nav wrapper grip covers both halves of the grid */
+			'nav-wrapper'
+			/* conversely the left column and write column will take up the bottoms halves of the grid */
+			'left-column'
+			'right-column'
+		;
+		
+		
+	}
+	
+	.right-column{
+		justify-content: center;
+	}
+}
+
+/* Notes
+- Mess around with box shadow (spacing between sections needed?)
+- Used CSS shadow generator
+- Used Google Fonts
+- Change 
+
+*/
+ 
