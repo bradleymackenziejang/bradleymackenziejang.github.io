@@ -316,6 +316,29 @@ figcaption {
 	left: -5px;
 }
 
+.about-wrapper{
+	display: grid;
+	
+	/* autofit as many columns of the given dimensions as you can */
+	/* should never be smaller than 320px, if elements gets smaller, make into column */
+	grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+	padding-top: 50px;
+	padding-bottom: 50px;
+	gap: 100px;
+	
+}
+
+#skills{
+	display: flex;
+	justify-content: space-evenly;
+	background-color: var(--previewShadow);
+}
+
+#social-img{
+	display: block;
+	margin: 0 auto;
+	width: 65.4%;
+}
 
 	
 
